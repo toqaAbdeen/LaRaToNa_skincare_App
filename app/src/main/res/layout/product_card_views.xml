@@ -1,0 +1,73 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/product_card_views_style_imageView_product_image" />
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/product_card_views_text_product_name" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/product_card_views_textView_product_des" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            style="@style/product_card_views_style_textView_product_price" />
+
+        <TextView
+            android:id="@+id/txtOther"
+            style="@style/product_card_views_textView_product_other" />
+
+        <TextView
+            android:id="@+id/txtInventoryCount"
+            style="@style/product_card_views_textView_product_InventoryCount" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imVAdd"
+                style="@style/product_card_views_imageView_add_delete_product"
+                android:src="@drawable/add_icon"
+                android:contentDescription="@string/add_to_cart_icon" />
+
+            <TextView
+                android:id="@+id/txtNumberOrder"
+                style="@style/product_card_views_textView_order_quantity"
+                android:text="1" />
+
+            <ImageView
+                android:id="@+id/imVMinus"
+                style="@style/product_card_views_imageView_add_delete_product"
+                android:src="@drawable/minus_icon"
+                android:contentDescription="@string/delete_from_cart_icon" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            style="@style/product_card_button_add_to_cart"
+            android:text="@string/add_to_cart" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

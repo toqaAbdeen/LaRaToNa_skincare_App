@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="activity_sign_up_imageView_logo">
+        <item name="android:layout_width">192dp</item>
+        <item name="android:layout_height">159dp</item>
+        <item name="android:layout_marginTop">31dp</item>
+        <item name="android:layout_marginBottom">28dp</item>
+        <item name="android:src">@drawable/laratona_logo_circle</item>
+    </style>
+
+    <style name="activity_sign_up_editText_sign_up_template">
+        <item name="android:layout_width">379dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/edittext_border</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="activity_sign_up_checkBox_policy">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="activity_sign_up_button_create_account">
+        <item name="android:layout_width">347dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:backgroundTint">#FFF4B1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

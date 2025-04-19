@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <style name="activity_bag_text_skin_care">
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="activity_bag_text_review_confirm">
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="activity_bag_grid_layout">
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:alignmentMode">alignMargins</item>
+        <item name="android:columnCount">2</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:rowOrderPreserved">false</item>
+        <item name="android:useDefaultMargins">true</item>
+    </style>
+
+    <style name="activity_bag_text_total">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="activity_bag_button_confirm_buy">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:backgroundTint">#10B981</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="activity_bag_bottom_app_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:backgroundTint">#f6f6f6</item>
+
+    </style>
+
+</resources>

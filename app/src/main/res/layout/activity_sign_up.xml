@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7F3D0"
+    tools:context=".signUpActivity"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imVLogo"
+        style="@style/activity_sign_up_imageView_logo"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtUsername"
+        style="@style/activity_sign_up_editText_sign_up_template"
+        android:layout_marginBottom="22dp"
+        android:hint="@string/username"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imVLogo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/activity_sign_up_editText_sign_up_template"
+        android:layout_marginBottom="25dp"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/edtPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        style="@style/activity_sign_up_editText_sign_up_template"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/phone_number"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/activity_sign_up_editText_sign_up_template"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edtConfirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        style="@style/activity_sign_up_editText_sign_up_template"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/cksPolicy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cksPolicy"
+        style="@style/activity_sign_up_checkBox_policy"
+        android:layout_marginBottom="22dp"
+        android:text="@string/privacy_policy"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword" />
+
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/activity_sign_up_button_create_account"
+        android:layout_marginBottom="29dp"
+        android:onClick="btnCreateAccountOnClick"
+        android:text="@string/create_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cksPolicy"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/cksPolicy"
+        app:layout_constraintTop_toBottomOf="@+id/cksPolicy"
+        tools:ignore="OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

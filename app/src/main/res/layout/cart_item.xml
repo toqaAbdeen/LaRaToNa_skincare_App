@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cart_item_bg"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        style="@style/cart_item_imageView_product" />
+
+    <TextView
+        android:id="@+id/productName"
+        style="@style/cart_item_textView_product_name"
+        android:text="Product Name" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/productPrice"
+            style="@style/cart_item_text_product_price"
+            android:text="$0.00" />
+
+        <ImageView
+            android:id="@+id/imvDeleteIcon"
+            style="@style/cart_item_image_delete_icon"
+            android:src="@drawable/delete_icon"
+            android:contentDescription="Delete item" />
+
+    </LinearLayout>
+
+</LinearLayout>

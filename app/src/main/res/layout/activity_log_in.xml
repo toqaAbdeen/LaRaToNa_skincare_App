@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7F3D0"
+    tools:context=".logInActivity">
+
+    <ImageView
+        android:id="@+id/imVLogo"
+        style="@style/activity_log_in_imageView_logo"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        style="@style/activity_log_in_editText_log_in"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/username"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imVLogo" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/activity_log_in_editText_log_in"
+        android:layout_marginBottom="37dp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/chk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/chk"
+        style="@style/activity_log_in_checkBox"
+        android:layout_marginBottom="214dp"
+        android:text="@string/remember_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:text="@string/log_in_button"
+        android:onClick="btnLogInOnCLick"
+        style="@style/activity_log_in_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

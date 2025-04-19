@@ -1,0 +1,65 @@
+<resources>
+
+
+    <style name="activity_main_imageView_logoImage">
+        <item name="android:layout_width">257dp</item>
+        <item name="android:layout_height">399dp</item>
+        <item name="android:layout_marginStart">77dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">60dp</item>
+        <item name="android:layout_marginBottom">104dp</item>
+        <item name="android:contentDescription">@string/laratona_logo</item>
+        <item name="android:src">@drawable/laratona_logo_without_background</item>
+    </style>
+
+    <style name="activity_main_text_app_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">19dp</item>
+        <item name="android:layout_marginTop">257dp</item>
+        <item name="android:layout_marginBottom">36dp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="activity_main_text_welcome">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">71dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="activity_main_button_log_in">
+        <item name="android:layout_width">347dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:layout_marginBottom">186dp</item>
+        <item name="android:backgroundTint">#FFF4B1</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="activity_main_button_sign_up">
+        <item name="android:layout_width">347dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:layout_marginBottom">112dp</item>
+        <item name="android:backgroundTint">#FFF4B1</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
